@@ -1,0 +1,8 @@
+ssh pi@192.168.0.30 (pwd raspberry)
+sudo service webcamd restart
+sudo service webcamd status
+# then check
+# vim /var/log/webcamd.log
+# I got Error opening device /dev/video10: video capture not supported
+vcgencmd get_camera
+# And actually what I did is just unplugging/replugging the webcam
