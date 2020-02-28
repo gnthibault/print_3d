@@ -1,4 +1,4 @@
-# Start gcode
+# Start gcode (Do not include this line)
 G28 ;Home
 G1 Z15.0 F6000 ;Move the platform down 15mm
 ;Prime the extruder
@@ -11,7 +11,7 @@ M204 P1250 R1250 T1250 ; sets acceleration (P, T) and retract acceleration (R), 
 M205 X8.00 Y8.00 Z0.40 E1.50 ; sets the jerk limits, mm/sec
 M205 S0 T0 ; sets the minimum extruding and travel feed rate, mm/sec
 
-# Stop gcode
+# Stop gcode (Do not include this line)
 M104 S0
 M140 S0 ;Retract the filament
 G92 E1
