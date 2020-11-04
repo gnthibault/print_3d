@@ -1,0 +1,6 @@
+Connect usb cable from printer to computer
+Open Cura, settings, printer, update firmware
+In case the flash from cura doesn't work, turn off printer, put up the front side, and disconnect the large grey cable on the right, then put the printer back down and turn it on.
+Restart cura, and try to flash again.
+Once done, turn off printer again, reconnect the large grey cable on the right (next to the lcd screen, on the right when facing the front side of the printer).
+Select in the menu initialize EEPROM, then save settings then load settings.
