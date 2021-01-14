@@ -1,3 +1,9 @@
+# Optional start gcode if you have a BL Touch
+M280 P0 S160 ; BLTouch alarm release
+G4 P100 ; delay for BLTouch
+G28 ; home
+G29 ; auto bed leveling
+
 # Start gcode (Do not include this line)
 G28 ;Home
 M420 S1 ;Activate mesh bed levels from calibration
@@ -11,6 +17,7 @@ M203 X200 Y200 Z12 E120 ; sets maximum feedrates, mm/sec
 M204 P1250 R1250 T1250 ; sets acceleration (P, T) and retract acceleration (R), mm/sec^2
 M205 X8.00 Y8.00 Z0.40 E1.50 ; sets the jerk limits, mm/sec
 M205 S0 T0 ; sets the minimum extruding and travel feed rate, mm/sec
+
 
 # Stop gcode (Do not include this line)
 M104 S0
