@@ -5,8 +5,8 @@ G28 ; home
 G29 ; auto bed leveling
 
 # Start gcode (Do not include this line)
-G28 ;Home
-M420 S1 ;Activate mesh bed levels from calibration
+G28 ;Home, optional if you included previous bltouch code
+; M420 S1 ;Activate mesh bed levels from calibration, add only if you have done the bed leveling
 G1 Z15.0 F6000 ;Move the platform down 15mm
 ;Prime the extruder
 G92 E0
